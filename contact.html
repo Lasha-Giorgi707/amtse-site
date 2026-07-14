@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>კონტაქტი — ამწე | მოითხოვეთ შეთავაზება</title>
+  <meta name="description" content="დაუკავშირდით ამწეს: მოითხოვეთ შეთავაზება კოშკურა ამწის ქირაობაზე. პასუხები ხშირად დასმულ კითხვებზე.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ka_GE">
+  <meta property="og:title" content="კონტაქტი — ამწე">
+  <meta property="og:description" content="მოითხოვეთ შეთავაზება კოშკურა ამწის ქირაობაზე თქვენი სამშენებლო პროექტისთვის.">
+  <!-- TODO: og:image needs an absolute URL after deploy -->
+  <meta property="og:image" content="assets/og-cover.jpg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+  <header class="site-header is-scrolled" data-header>
+    <div class="wrap site-header__bar">
+      <a class="logo" href="index.html" aria-label="ამწე — მთავარი გვერდი">
+        ამწე
+        <span class="logo__stripe" aria-hidden="true"></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="მენიუს გახსნა" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="ძირითადი ნავიგაცია" data-nav>
+        <a href="index.html">მთავარი</a>
+        <a href="index.html#services">სერვისები</a>
+        <a href="index.html#gallery">გალერეა</a>
+        <a href="index.html#about">ჩვენს შესახებ</a>
+        <a href="contact.html" aria-current="page">კონტაქტი</a>
+        <a class="btn btn--solid" href="#contact-form">მოითხოვეთ შეთავაზება</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero bg-blueprint">
+      <div class="wrap">
+        <h1>კონტაქტი</h1>
+        <p class="muted" style="font-size: var(--step-1); max-width: 52ch;">აღწერეთ პროექტი და ტვირთი, რომლის აწევაც გჭირდებათ. ტექნიკური ჯგუფი მოგამზადებთ შეთავაზებას შესაფერისი ამწითა და პირობებით.</p>
+      </div>
+    </section>
+
+    <section class="bg-scale">
+      <div class="wrap contact-grid">
+        <!-- 1. Contact form -->
+        <form class="form" id="contact-form" novalidate data-contact-form>
+          <h2 style="font-size: var(--step-2); margin-bottom: 0.2em;">მოითხოვეთ შეთავაზება</h2>
+          <div class="form__row">
+            <div class="field">
+              <label for="cf-name">სახელი *</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cf-company">კომპანია</label>
+              <input id="cf-company" name="company" type="text" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="cf-email">ელ-ფოსტა *</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="cf-phone">ტელეფონი *</label>
+              <input id="cf-phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-message">შეტყობინება *</label>
+            <textarea id="cf-message" name="message" required
+                      placeholder="პროექტის ტიპი, ობიექტის მისამართი, ტვირთის წონა, სავარაუდო ვადები…"></textarea>
+          </div>
+          <div>
+            <button class="btn btn--solid" type="submit">გაგზავნა</button>
+          </div>
+          <p class="form__notice" role="status" aria-live="polite" data-form-notice>
+            <span class="todo">[FORM ENDPOINT: SHESAVSEBI]</span> — ფორმა ჯერ არ არის მიერთებული სერვერთან. დროებით მოგვწერეთ პირდაპირ ელ-ფოსტაზე ან დაგვირეკეთ.
+          </p>
+        </form>
+
+        <!-- 2. Direct contact + supporting image -->
+        <aside class="contact-direct" aria-label="პირდაპირი კონტაქტი">
+          <h2 style="font-size: var(--step-2); margin-bottom: 0.2em;">პირდაპირი კავშირი</h2>
+          <dl>
+            <div>
+              <dt>ტელეფონი</dt>
+              <dd><span class="todo">[TELEFONI: SHESAVSEBI — ჯერ არ არის მითითებული]</span></dd>
+            </div>
+            <div>
+              <dt>ელ-ფოსტა</dt>
+              <dd><span class="todo">[EMAILI: SHESAVSEBI]</span></dd>
+            </div>
+            <div>
+              <dt>მისამართი / მომსახურების ზონა</dt>
+              <dd><span class="todo">[MISAMARTI/SAMSAKhurEBIS ZONA: SHESAVSEBI]</span></dd>
+            </div>
+            <div>
+              <dt>სამუშაო საათები</dt>
+              <dd><span class="todo">[SAMUSHAO SAATEBI: SHESAVSEBI]</span></dd>
+            </div>
+          </dl>
+          <figure>
+            <img src="assets/contact-operator.jpg"
+                 alt="ამწის ოპერატორი კაბინაში, დაისის შუქზე, სამშენებლო მოედნის თავზე"
+                 loading="lazy" width="1280" height="720">
+            <figcaption>ოპერატორის კაბინა. ყოველი აწევა იწყება აქ.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 3. FAQ -->
+    <section class="section section--alt bg-site">
+      <svg class="ghost-crane ghost-crane--flip ghost-crane--sm" aria-hidden="true" viewBox="0 0 640 900" stroke-width="3">
+        <path d="M90 900 V210 M150 900 V210"/>
+        <path d="M90 880 L150 820 L90 760 L150 700 L90 640 L150 580 L90 520 L150 460 L90 400 L150 340 L90 280 L150 220"/>
+        <path d="M70 210 H170 V160 H70 Z M120 160 V105"/>
+        <path d="M170 165 L630 205 M170 210 H630 M230 172 V210 M310 180 V210 M390 187 V210 M470 194 V210 M550 200 V210"/>
+        <path d="M70 210 H10 M70 182 L10 208 M10 210 h48 v36 h-48 Z"/>
+        <path d="M120 105 L400 182 M120 105 L38 192"/>
+        <path class="ghost-crane__amber" d="M430 214 h14 M437 218 V520 q-18 28 10 38"/>
+      </svg>
+      <div class="wrap">
+        <div class="section__head">
+          <h2>ხშირად დასმული კითხვები</h2>
+          <p><span class="todo">[დრაფტი: პასუხები დასაზუსტებელია რეალური პირობების მიხედვით]</span></p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>როგორ მიმდინარეობს ქირაობის პროცესი?</summary>
+            <p>გვიგზავნით მოთხოვნას პროექტის აღწერით. ტექნიკური ჯგუფი აფასებს ობიექტს, გირჩევთ შესაფერის ამწეს და გიგზავნით შეთავაზებას. ხელშეკრულების გაფორმების შემდეგ ვგეგმავთ მობილიზაციას და მონტაჟს.</p>
+          </details>
+          <details>
+            <summary>რა არის ქირაობის მინიმალური ვადა?</summary>
+            <p>ვადა დამოკიდებულია ამწის ტიპსა და პროექტზე. <span class="todo">[დრაფტი: მინიმალური ვადა დასაზუსტებელია]</span></p>
+          </details>
+          <details>
+            <summary>შედის თუ არა ოპერატორი ფასში?</summary>
+            <p>ამწეებს, როგორც წესი, ვაქირავებთ სერტიფიცირებულ ოპერატორთან ერთად. ოპერატორის გარეშე ქირაობის პირობები განიხილება ინდივიდუალურად. <span class="todo">[დრაფტი: პირობები დასაზუსტებელია]</span></p>
+          </details>
+          <details>
+            <summary>რომელ რეგიონებში მუშაობთ?</summary>
+            <p><span class="todo">[MISAMARTI/SAMSAKhurEBIS ZONA: SHESAVSEBI]</span></p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="hazard" aria-hidden="true"></div>
+    <div class="wrap site-footer__grid">
+      <div>
+        <h3>ამწე</h3>
+        <ul>
+          <li>კოშკურა ამწეების გაქირავება სამშენებლო კომპანიებისთვის.</li>
+          <li>სანდო ტექნიკა. სერტიფიცირებული ოპერატორები.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>საკონტაქტო ინფორმაცია</h3>
+        <ul>
+          <li>ტელეფონი: <span class="todo">[TELEFONI: SHESAVSEBI — ჯერ არ არის მითითებული]</span></li>
+          <li>ელ-ფოსტა: <span class="todo">[EMAILI: SHESAVSEBI]</span></li>
+          <li>მისამართი: <span class="todo">[MISAMARTI/SAMSAKhurEBIS ZONA: SHESAVSEBI]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>სამუშაო საათები</h3>
+        <ul>
+          <li><span class="todo">[SAMUSHAO SAATEBI: SHESAVSEBI]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>ნავიგაცია</h3>
+        <ul>
+          <li><a href="index.html">მთავარი</a></li>
+          <li><a href="index.html#services">სერვისები</a></li>
+          <li><a href="index.html#gallery">გალერეა</a></li>
+          <li><a href="index.html#about">ჩვენს შესახებ</a></li>
+          <li><a href="contact.html">კონტაქტი</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap site-footer__legal">
+      <span>© <span data-year>2026</span> ამწე — ყველა უფლება დაცულია</span>
+      <span>სოციალური ქსელები: <span class="todo">[BMULEBI: SHESAVSEBI]</span></span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
