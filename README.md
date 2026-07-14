@@ -39,6 +39,8 @@ The home-page centerpiece maps `video.currentTime` to scroll progress
 feels steppy on some machines, re-encode with denser keyframes:
 `ffmpeg -i scrub-crane-lift.mp4 -g 5 -crf 20 -movflags +faststart out.mp4`.
 
-## Deploy (GitHub Pages)
+## Deployments
 
-Repo → Settings → Pages → deploy from branch, root. All paths are relative.
+- GitHub Pages: https://lasha-giorgi707.github.io/amtse-site/ (auto-deploys on push to `main`)
+- Vercel: https://amtse-site.vercel.app (redeploy with `npx vercel deploy --prod`)
+- Repo: https://github.com/Lasha-Giorgi707/amtse-site
